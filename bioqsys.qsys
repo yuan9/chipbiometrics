@@ -109,7 +109,7 @@
    internal="hexdriver_0.conduit_end_5"
    type="conduit"
    dir="end" />
- <module name="clk_0" kind="clock_source" version="17.0" enabled="1">
+ <module name="clk_0" kind="clock_source" version="17.1" enabled="1">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
@@ -119,7 +119,7 @@
  <module
    name="master_0"
    kind="altera_jtag_avalon_master"
-   version="17.0"
+   version="17.1"
    enabled="1">
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
@@ -133,7 +133,7 @@
  <module name="ro16_mm_0" kind="ro16_mm" version="1.0" enabled="1" />
  <connection
    kind="avalon"
-   version="17.0"
+   version="17.1"
    start="master_0.master"
    end="ro16_mm_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
@@ -142,34 +142,34 @@
  </connection>
  <connection
    kind="avalon"
-   version="17.0"
+   version="17.1"
    start="master_0.master"
    end="hexdriver_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="clock" version="17.0" start="clk_0.clk" end="master_0.clk" />
- <connection kind="clock" version="17.0" start="clk_0.clk" end="ro16_mm_0.clock" />
- <connection kind="clock" version="17.0" start="clk_0.clk" end="hexdriver_0.clock" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="master_0.clk" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="ro16_mm_0.clock" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="hexdriver_0.clock" />
  <connection
    kind="reset"
-   version="17.0"
+   version="17.1"
    start="clk_0.clk_reset"
    end="master_0.clk_reset" />
  <connection
    kind="reset"
-   version="17.0"
+   version="17.1"
    start="clk_0.clk_reset"
    end="ro16_mm_0.reset" />
  <connection
    kind="reset"
-   version="17.0"
+   version="17.1"
    start="clk_0.clk_reset"
    end="hexdriver_0.reset" />
  <connection
    kind="reset"
-   version="17.0"
+   version="17.1"
    start="master_0.master_reset"
    end="clk_0.clk_in_reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />

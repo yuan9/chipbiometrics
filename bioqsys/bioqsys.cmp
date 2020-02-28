@@ -1,0 +1,12 @@
+	component bioqsys is
+		port (
+			clk_clk       : in  std_logic                    := 'X'; -- clk
+			hex0_readdata : out std_logic_vector(6 downto 0);        -- readdata
+			hex1_name     : out std_logic_vector(6 downto 0);        -- name
+			hex2_readdata : out std_logic_vector(6 downto 0);        -- readdata
+			hex3_readdata : out std_logic_vector(6 downto 0);        -- readdata
+			hex4_readdata : out std_logic_vector(6 downto 0);        -- readdata
+			hex5_readdata : out std_logic_vector(6 downto 0)         -- readdata
+		);
+	end component bioqsys;
+

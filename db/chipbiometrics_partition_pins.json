@@ -1,0 +1,181 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hex0_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex0_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex1_name[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex2_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex3_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex4_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[0]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[1]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[2]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[3]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[4]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[5]",
+					"strict" : false
+				},
+				{
+					"name" : "hex5_readdata[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

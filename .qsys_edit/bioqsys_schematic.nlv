@@ -1,0 +1,30 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst bioqsys.master_0.timing_adt -pg 1
+preplace inst bioqsys.master_0.clk_rst -pg 1
+preplace inst bioqsys.master_0.transacto -pg 1
+preplace inst bioqsys.clk_0 -pg 1 -lvl 2 -y 50
+preplace inst bioqsys.master_0.p2b_adapter -pg 1
+preplace inst bioqsys.master_0.b2p_adapter -pg 1
+preplace inst bioqsys.master_0.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst bioqsys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst bioqsys.master_0.clk_src -pg 1
+preplace inst bioqsys.master_0 -pg 1 -lvl 1 -y 50
+preplace inst bioqsys.master_0.b2p -pg 1
+preplace inst bioqsys.master_0.p2b -pg 1
+preplace inst bioqsys.master_0.fifo -pg 1
+preplace inst bioqsys.hexdriver_0 -pg 1 -lvl 2 -y 210
+preplace inst bioqsys.ro16_mm_0 -pg 1 -lvl 2 -y 130
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.hex4,(SLAVE)hexdriver_0.conduit_end_4) 1 0 2 NJ 340 NJ
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.hex1,(SLAVE)hexdriver_0.conduit_end_1) 1 0 2 NJ 280 NJ
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.hex2,(SLAVE)hexdriver_0.conduit_end_2) 1 0 2 NJ 300 NJ
+preplace netloc FAN_OUT<net_container>bioqsys</net_container>(SLAVE)master_0.clk_reset,(MASTER)clk_0.clk_reset,(SLAVE)hexdriver_0.reset,(SLAVE)ro16_mm_0.reset) 1 0 3 90 380 330 40 610
+preplace netloc FAN_OUT<net_container>bioqsys</net_container>(SLAVE)hexdriver_0.avalon_slave_0,(SLAVE)ro16_mm_0.avalon_slave_0,(MASTER)master_0.master) 1 1 1 350
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)hexdriver_0.conduit_end,(SLAVE)bioqsys.hex0) 1 0 2 NJ 260 NJ
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.hex3,(SLAVE)hexdriver_0.conduit_end_3) 1 0 2 NJ 320 NJ
+preplace netloc POINT_TO_POINT<net_container>bioqsys</net_container>(SLAVE)clk_0.clk_in_reset,(MASTER)master_0.master_reset) 1 1 1 N
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.clk,(SLAVE)clk_0.clk_in) 1 0 2 NJ 130 NJ
+preplace netloc FAN_OUT<net_container>bioqsys</net_container>(SLAVE)ro16_mm_0.clock,(MASTER)clk_0.clk,(SLAVE)hexdriver_0.clock,(SLAVE)master_0.clk) 1 0 3 70 150 390 120 590
+preplace netloc EXPORT<net_container>bioqsys</net_container>(SLAVE)bioqsys.hex5,(SLAVE)hexdriver_0.conduit_end_5) 1 0 2 NJ 360 NJ
+levelinfo -pg 1 0 40 650
+levelinfo -hier bioqsys 50 170 420 630
